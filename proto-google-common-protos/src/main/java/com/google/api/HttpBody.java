@@ -22,8 +22,7 @@ package com.google.api;
  *     }
  *     service ResourceService {
  *       rpc GetResource(GetResourceRequest) returns (google.api.HttpBody);
- *       rpc UpdateResource(google.api.HttpBody) returns
- *       (google.protobuf.Empty);
+ *       rpc UpdateResource(google.api.HttpBody) returns (google.protobuf.Empty);
  *     }
  * Example with streaming methods:
  *     service CaldavService {
@@ -137,7 +136,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object contentType_;
   /**
    * <pre>
-   * The HTTP Content-Type header value specifying the content type of the body.
+   * The HTTP Content-Type string representing the content type of the body.
    * </pre>
    *
    * <code>string content_type = 1;</code>
@@ -156,7 +155,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The HTTP Content-Type header value specifying the content type of the body.
+   * The HTTP Content-Type string representing the content type of the body.
    * </pre>
    *
    * <code>string content_type = 1;</code>
@@ -179,7 +178,7 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.ByteString data_;
   /**
    * <pre>
-   * The HTTP request/response body as raw binary.
+   * HTTP body binary data.
    * </pre>
    *
    * <code>bytes data = 2;</code>
@@ -446,8 +445,7 @@ private static final long serialVersionUID = 0L;
    *     }
    *     service ResourceService {
    *       rpc GetResource(GetResourceRequest) returns (google.api.HttpBody);
-   *       rpc UpdateResource(google.api.HttpBody) returns
-   *       (google.protobuf.Empty);
+   *       rpc UpdateResource(google.api.HttpBody) returns (google.protobuf.Empty);
    *     }
    * Example with streaming methods:
    *     service CaldavService {
@@ -662,7 +660,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object contentType_ = "";
     /**
      * <pre>
-     * The HTTP Content-Type header value specifying the content type of the body.
+     * The HTTP Content-Type string representing the content type of the body.
      * </pre>
      *
      * <code>string content_type = 1;</code>
@@ -681,7 +679,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The HTTP Content-Type header value specifying the content type of the body.
+     * The HTTP Content-Type string representing the content type of the body.
      * </pre>
      *
      * <code>string content_type = 1;</code>
@@ -701,7 +699,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The HTTP Content-Type header value specifying the content type of the body.
+     * The HTTP Content-Type string representing the content type of the body.
      * </pre>
      *
      * <code>string content_type = 1;</code>
@@ -718,7 +716,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The HTTP Content-Type header value specifying the content type of the body.
+     * The HTTP Content-Type string representing the content type of the body.
      * </pre>
      *
      * <code>string content_type = 1;</code>
@@ -731,7 +729,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The HTTP Content-Type header value specifying the content type of the body.
+     * The HTTP Content-Type string representing the content type of the body.
      * </pre>
      *
      * <code>string content_type = 1;</code>
@@ -751,7 +749,7 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
     /**
      * <pre>
-     * The HTTP request/response body as raw binary.
+     * HTTP body binary data.
      * </pre>
      *
      * <code>bytes data = 2;</code>
@@ -761,7 +759,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The HTTP request/response body as raw binary.
+     * HTTP body binary data.
      * </pre>
      *
      * <code>bytes data = 2;</code>
@@ -777,7 +775,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The HTTP request/response body as raw binary.
+     * HTTP body binary data.
      * </pre>
      *
      * <code>bytes data = 2;</code>

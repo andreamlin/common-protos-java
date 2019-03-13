@@ -5,8 +5,7 @@ package com.google.longrunning;
 
 /**
  * <pre>
- * The request message for
- * [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
+ * The request message for [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
  * </pre>
  *
  * Protobuf type {@code google.longrunning.CancelOperationRequest}
@@ -285,8 +284,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The request message for
-   * [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
+   * The request message for [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
    * </pre>
    *
    * Protobuf type {@code google.longrunning.CancelOperationRequest}

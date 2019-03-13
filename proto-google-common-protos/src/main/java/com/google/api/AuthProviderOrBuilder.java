@@ -58,15 +58,12 @@ public interface AuthProviderOrBuilder extends
   /**
    * <pre>
    * URL of the provider's public key set to validate signature of the JWT. See
-   * [OpenID
-   * Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata).
+   * [OpenID Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata).
    * Optional if the key set document:
    *  - can be retrieved from
-   *    [OpenID
-   *    Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html of
-   *    the issuer.
-   *  - can be inferred from the email domain of the issuer (e.g. a Google
-   *  service account).
+   *    [OpenID Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html
+   *    of the issuer.
+   *  - can be inferred from the email domain of the issuer (e.g. a Google service account).
    * Example: https://www.googleapis.com/oauth2/v1/certs
    * </pre>
    *
@@ -76,15 +73,12 @@ public interface AuthProviderOrBuilder extends
   /**
    * <pre>
    * URL of the provider's public key set to validate signature of the JWT. See
-   * [OpenID
-   * Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata).
+   * [OpenID Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata).
    * Optional if the key set document:
    *  - can be retrieved from
-   *    [OpenID
-   *    Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html of
-   *    the issuer.
-   *  - can be inferred from the email domain of the issuer (e.g. a Google
-   *  service account).
+   *    [OpenID Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html
+   *    of the issuer.
+   *  - can be inferred from the email domain of the issuer (e.g. a Google service account).
    * Example: https://www.googleapis.com/oauth2/v1/certs
    * </pre>
    *
@@ -133,7 +127,7 @@ public interface AuthProviderOrBuilder extends
 
   /**
    * <pre>
-   * Redirect URL if JWT token is required but not present or is expired.
+   * Redirect URL if JWT token is required but no present or is expired.
    * Implement authorizationUrl of securityDefinitions in OpenAPI spec.
    * </pre>
    *
@@ -142,7 +136,7 @@ public interface AuthProviderOrBuilder extends
   java.lang.String getAuthorizationUrl();
   /**
    * <pre>
-   * Redirect URL if JWT token is required but not present or is expired.
+   * Redirect URL if JWT token is required but no present or is expired.
    * Implement authorizationUrl of securityDefinitions in OpenAPI spec.
    * </pre>
    *

@@ -1,4 +1,4 @@
-// Copyright 2018 Google LLC.
+// Copyright 2017 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -11,7 +11,6 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-//
 
 syntax = "proto3";
 
@@ -25,9 +24,7 @@ import "google/api/context.proto";
 import "google/api/control.proto";
 import "google/api/documentation.proto";
 import "google/api/endpoint.proto";
-import "google/api/experimental/experimental.proto";
 import "google/api/http.proto";
-import "google/api/label.proto";
 import "google/api/log.proto";
 import "google/api/logging.proto";
 import "google/api/metric.proto";
@@ -37,7 +34,6 @@ import "google/api/quota.proto";
 import "google/api/source_info.proto";
 import "google/api/system_parameter.proto";
 import "google/api/usage.proto";
-import "google/protobuf/any.proto";
 import "google/protobuf/api.proto";
 import "google/protobuf/type.proto";
 import "google/protobuf/wrappers.proto";
@@ -47,6 +43,7 @@ option java_multiple_files = true;
 option java_outer_classname = "ServiceProto";
 option java_package = "com.google.api";
 option objc_class_prefix = "GAPI";
+
 
 // `Service` is the root object of Google service configuration schema. It
 // describes basic information about a service, such as the name and the
@@ -78,15 +75,13 @@ message Service {
   // The latest config version is `3`.
   google.protobuf.UInt32Value config_version = 20;
 
-  // The service name, which is a DNS-like logical identifier for the
-  // service, such as `calendar.googleapis.com`. The service name
-  // typically goes through DNS verification to make sure the owner
-  // of the service also owns the DNS name.
+  // The DNS address at which this service is available,
+  // e.g. `calendar.googleapis.com`.
   string name = 1;
 
   // A unique ID for a specific instance of this message, typically assigned
   // by the client for tracking purpose. If empty, the server may choose to
-  // generate one instead. Must be no longer than 60 characters.
+  // generate one instead.
   string id = 33;
 
   // The product title for this service.
@@ -96,10 +91,10 @@ message Service {
   string producer_project_id = 22;
 
   // A list of API interfaces exported by this service. Only the `name` field
-  // of the [google.protobuf.Api][google.protobuf.Api] needs to be provided by
-  // the configuration author, as the remaining fields will be derived from the
-  // IDL during the normalization process. It is an error to specify an API
-  // interface here which cannot be resolved against the associated IDL files.
+  // of the [google.protobuf.Api][google.protobuf.Api] needs to be provided by the configuration
+  // author, as the remaining fields will be derived from the IDL during the
+  // normalization process. It is an error to specify an API interface here
+  // which cannot be resolved against the associated IDL files.
   repeated google.protobuf.Api apis = 3;
 
   // A list of all proto message types included in this API service.
@@ -157,8 +152,7 @@ message Service {
   repeated MetricDescriptor metrics = 24;
 
   // Defines the monitored resources used by this service. This is required
-  // by the [Service.monitoring][google.api.Service.monitoring] and
-  // [Service.logging][google.api.Service.logging] configurations.
+  // by the [Service.monitoring][google.api.Service.monitoring] and [Service.logging][google.api.Service.logging] configurations.
   repeated MonitoredResourceDescriptor monitored_resources = 25;
 
   // Billing configuration.
@@ -177,5 +171,5 @@ message Service {
   SourceInfo source_info = 37;
 
   // Experimental configuration.
-  Experimental experimental = 101;
+  reserved 101;
 }
