@@ -1,0 +1,57 @@
+# This is an API workspace, having public visibility by default makes perfect sense.
+package(default_visibility = ["//visibility:public"])
+
+##############################################################################
+# Common
+##############################################################################
+load("//rules_gapic:gapic.bzl", "proto_library_with_info")
+load("//rules_gapic:gapic.bzl", "gapic_srcjar", "proto_custom_library")
+load("//rules_gapic/java:java_gapic_repositories.bzl", "java_gapic_repositories")
+
+proto_library(
+    name = "google_common_protos",
+    srcs = ["errors.proto"],
+)
+
+proto_library(
+    name = "other_shared_type_proto",
+    srcs = ["other_shared_type.proto"],
+)
+
+proto_library(
+    name = "shared_type_proto",
+    srcs = ["shared_type.proto"],
+    deps = [
+        ":other_shared_type_proto",
+    ],
+)
+
+proto_library(
+    name = "tagger_proto",
+    srcs = ["tagger.proto"],
+    deps = [
+        "//google/api:annotations_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "library_proto",
+    srcs = ["library.proto"],
+    deps = [
+        ":errors_proto",
+        ":shared_type_proto",
+        ":tagger_proto",
+        "//google/api:annotations_proto",
+        "//google/api:client_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "//google/longrunning:operations_proto",
+    ],
+)
+
+proto_library_with_info(
+    name = "library_proto_with_info",
+    deps = [":library_proto"],
+)
