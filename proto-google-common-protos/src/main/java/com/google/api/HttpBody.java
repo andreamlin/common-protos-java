@@ -22,8 +22,7 @@ package com.google.api;
  *     }
  *     service ResourceService {
  *       rpc GetResource(GetResourceRequest) returns (google.api.HttpBody);
- *       rpc UpdateResource(google.api.HttpBody) returns
- *       (google.protobuf.Empty);
+ *       rpc UpdateResource(google.api.HttpBody) returns (google.protobuf.Empty);
  *     }
  * Example with streaming methods:
  *     service CaldavService {
@@ -446,8 +445,7 @@ private static final long serialVersionUID = 0L;
    *     }
    *     service ResourceService {
    *       rpc GetResource(GetResourceRequest) returns (google.api.HttpBody);
-   *       rpc UpdateResource(google.api.HttpBody) returns
-   *       (google.protobuf.Empty);
+   *       rpc UpdateResource(google.api.HttpBody) returns (google.protobuf.Empty);
    *     }
    * Example with streaming methods:
    *     service CaldavService {

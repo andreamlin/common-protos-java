@@ -5,22 +5,21 @@ package com.google.rpc;
 
 /**
  * <pre>
- * The `Status` type defines a logical error model that is suitable for
- * different programming environments, including REST APIs and RPC APIs. It is
- * used by [gRPC](https://github.com/grpc). The error model is designed to be:
+ * The `Status` type defines a logical error model that is suitable for different
+ * programming environments, including REST APIs and RPC APIs. It is used by
+ * [gRPC](https://github.com/grpc). The error model is designed to be:
  * - Simple to use and understand for most users
  * - Flexible enough to meet unexpected needs
  * # Overview
- * The `Status` message contains three pieces of data: error code, error
- * message, and error details. The error code should be an enum value of
- * [google.rpc.Code][google.rpc.Code], but it may accept additional error codes
- * if needed.  The error message should be a developer-facing English message
- * that helps developers *understand* and *resolve* the error. If a localized
- * user-facing error message is needed, put the localized message in the error
- * details or localize it in the client. The optional error details may contain
- * arbitrary information about the error. There is a predefined set of error
- * detail types in the package `google.rpc` that can be used for common error
- * conditions.
+ * The `Status` message contains three pieces of data: error code, error message,
+ * and error details. The error code should be an enum value of
+ * [google.rpc.Code][google.rpc.Code], but it may accept additional error codes if needed.  The
+ * error message should be a developer-facing English message that helps
+ * developers *understand* and *resolve* the error. If a localized user-facing
+ * error message is needed, put the localized message in the error details or
+ * localize it in the client. The optional error details may contain arbitrary
+ * information about the error. There is a predefined set of error detail types
+ * in the package `google.rpc` that can be used for common error conditions.
  * # Language mapping
  * The `Status` message is the logical representation of the error model, but it
  * is not necessarily the actual wire format. When the `Status` message is
@@ -148,8 +147,7 @@ private static final long serialVersionUID = 0L;
   private int code_;
   /**
    * <pre>
-   * The status code, which should be an enum value of
-   * [google.rpc.Code][google.rpc.Code].
+   * The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].
    * </pre>
    *
    * <code>int32 code = 1;</code>
@@ -164,8 +162,7 @@ private static final long serialVersionUID = 0L;
    * <pre>
    * A developer-facing error message, which should be in English. Any
    * user-facing error message should be localized and sent in the
-   * [google.rpc.Status.details][google.rpc.Status.details] field, or localized
-   * by the client.
+   * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
    * </pre>
    *
    * <code>string message = 2;</code>
@@ -186,8 +183,7 @@ private static final long serialVersionUID = 0L;
    * <pre>
    * A developer-facing error message, which should be in English. Any
    * user-facing error message should be localized and sent in the
-   * [google.rpc.Status.details][google.rpc.Status.details] field, or localized
-   * by the client.
+   * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
    * </pre>
    *
    * <code>string message = 2;</code>
@@ -447,22 +443,21 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The `Status` type defines a logical error model that is suitable for
-   * different programming environments, including REST APIs and RPC APIs. It is
-   * used by [gRPC](https://github.com/grpc). The error model is designed to be:
+   * The `Status` type defines a logical error model that is suitable for different
+   * programming environments, including REST APIs and RPC APIs. It is used by
+   * [gRPC](https://github.com/grpc). The error model is designed to be:
    * - Simple to use and understand for most users
    * - Flexible enough to meet unexpected needs
    * # Overview
-   * The `Status` message contains three pieces of data: error code, error
-   * message, and error details. The error code should be an enum value of
-   * [google.rpc.Code][google.rpc.Code], but it may accept additional error codes
-   * if needed.  The error message should be a developer-facing English message
-   * that helps developers *understand* and *resolve* the error. If a localized
-   * user-facing error message is needed, put the localized message in the error
-   * details or localize it in the client. The optional error details may contain
-   * arbitrary information about the error. There is a predefined set of error
-   * detail types in the package `google.rpc` that can be used for common error
-   * conditions.
+   * The `Status` message contains three pieces of data: error code, error message,
+   * and error details. The error code should be an enum value of
+   * [google.rpc.Code][google.rpc.Code], but it may accept additional error codes if needed.  The
+   * error message should be a developer-facing English message that helps
+   * developers *understand* and *resolve* the error. If a localized user-facing
+   * error message is needed, put the localized message in the error details or
+   * localize it in the client. The optional error details may contain arbitrary
+   * information about the error. There is a predefined set of error detail types
+   * in the package `google.rpc` that can be used for common error conditions.
    * # Language mapping
    * The `Status` message is the logical representation of the error model, but it
    * is not necessarily the actual wire format. When the `Status` message is
@@ -691,8 +686,7 @@ private static final long serialVersionUID = 0L;
     private int code_ ;
     /**
      * <pre>
-     * The status code, which should be an enum value of
-     * [google.rpc.Code][google.rpc.Code].
+     * The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].
      * </pre>
      *
      * <code>int32 code = 1;</code>
@@ -702,8 +696,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The status code, which should be an enum value of
-     * [google.rpc.Code][google.rpc.Code].
+     * The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].
      * </pre>
      *
      * <code>int32 code = 1;</code>
@@ -716,8 +709,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * The status code, which should be an enum value of
-     * [google.rpc.Code][google.rpc.Code].
+     * The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].
      * </pre>
      *
      * <code>int32 code = 1;</code>
@@ -734,8 +726,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * A developer-facing error message, which should be in English. Any
      * user-facing error message should be localized and sent in the
-     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized
-     * by the client.
+     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
      * </pre>
      *
      * <code>string message = 2;</code>
@@ -756,8 +747,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * A developer-facing error message, which should be in English. Any
      * user-facing error message should be localized and sent in the
-     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized
-     * by the client.
+     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
      * </pre>
      *
      * <code>string message = 2;</code>
@@ -779,8 +769,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * A developer-facing error message, which should be in English. Any
      * user-facing error message should be localized and sent in the
-     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized
-     * by the client.
+     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
      * </pre>
      *
      * <code>string message = 2;</code>
@@ -799,8 +788,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * A developer-facing error message, which should be in English. Any
      * user-facing error message should be localized and sent in the
-     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized
-     * by the client.
+     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
      * </pre>
      *
      * <code>string message = 2;</code>
@@ -815,8 +803,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * A developer-facing error message, which should be in English. Any
      * user-facing error message should be localized and sent in the
-     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized
-     * by the client.
+     * [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client.
      * </pre>
      *
      * <code>string message = 2;</code>

@@ -155,11 +155,9 @@ private static final long serialVersionUID = 0L;
      * Requests to the following request paths will call the backend at the
      * translated path:
      *     Request path: /api/company/widgetworks/user/johndoe
-     *     Translated:
-     *     https://example.cloudfunctions.net/getUser?cid=widgetworks&amp;uid=johndoe
+     *     Translated:   https://example.cloudfunctions.net/getUser?cid=widgetworks&amp;uid=johndoe
      *     Request path: /api/company/widgetworks/user/johndoe?timezone=EST
-     *     Translated:
-     *     https://example.cloudfunctions.net/getUser?timezone=EST&amp;cid=widgetworks&amp;uid=johndoe
+     *     Translated:   https://example.cloudfunctions.net/getUser?timezone=EST&amp;cid=widgetworks&amp;uid=johndoe
      * </pre>
      *
      * <code>CONSTANT_ADDRESS = 1;</code>
@@ -175,11 +173,9 @@ private static final long serialVersionUID = 0L;
      * Requests to the following request paths will call the backend at the
      * translated path:
      *     Request path: /api/company/widgetworks/user/johndoe
-     *     Translated:
-     *     https://example.appspot.com/api/company/widgetworks/user/johndoe
+     *     Translated:   https://example.appspot.com/api/company/widgetworks/user/johndoe
      *     Request path: /api/company/widgetworks/user/johndoe?timezone=EST
-     *     Translated:
-     *     https://example.appspot.com/api/company/widgetworks/user/johndoe?timezone=EST
+     *     Translated:   https://example.appspot.com/api/company/widgetworks/user/johndoe?timezone=EST
      * </pre>
      *
      * <code>APPEND_PATH_TO_ADDRESS = 2;</code>
@@ -206,11 +202,9 @@ private static final long serialVersionUID = 0L;
      * Requests to the following request paths will call the backend at the
      * translated path:
      *     Request path: /api/company/widgetworks/user/johndoe
-     *     Translated:
-     *     https://example.cloudfunctions.net/getUser?cid=widgetworks&amp;uid=johndoe
+     *     Translated:   https://example.cloudfunctions.net/getUser?cid=widgetworks&amp;uid=johndoe
      *     Request path: /api/company/widgetworks/user/johndoe?timezone=EST
-     *     Translated:
-     *     https://example.cloudfunctions.net/getUser?timezone=EST&amp;cid=widgetworks&amp;uid=johndoe
+     *     Translated:   https://example.cloudfunctions.net/getUser?timezone=EST&amp;cid=widgetworks&amp;uid=johndoe
      * </pre>
      *
      * <code>CONSTANT_ADDRESS = 1;</code>
@@ -226,11 +220,9 @@ private static final long serialVersionUID = 0L;
      * Requests to the following request paths will call the backend at the
      * translated path:
      *     Request path: /api/company/widgetworks/user/johndoe
-     *     Translated:
-     *     https://example.appspot.com/api/company/widgetworks/user/johndoe
+     *     Translated:   https://example.appspot.com/api/company/widgetworks/user/johndoe
      *     Request path: /api/company/widgetworks/user/johndoe?timezone=EST
-     *     Translated:
-     *     https://example.appspot.com/api/company/widgetworks/user/johndoe?timezone=EST
+     *     Translated:   https://example.appspot.com/api/company/widgetworks/user/johndoe?timezone=EST
      * </pre>
      *
      * <code>APPEND_PATH_TO_ADDRESS = 2;</code>
@@ -352,8 +344,7 @@ private static final long serialVersionUID = 0L;
   /**
    * <pre>
    * Selects the methods to which this rule applies.
-   * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-   * details.
+   * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
    * </pre>
    *
    * <code>string selector = 1;</code>
@@ -373,8 +364,7 @@ private static final long serialVersionUID = 0L;
   /**
    * <pre>
    * Selects the methods to which this rule applies.
-   * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-   * details.
+   * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
    * </pre>
    *
    * <code>string selector = 1;</code>
@@ -1006,8 +996,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Selects the methods to which this rule applies.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -1027,8 +1016,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Selects the methods to which this rule applies.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -1049,8 +1037,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Selects the methods to which this rule applies.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -1068,8 +1055,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Selects the methods to which this rule applies.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -1083,8 +1069,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Selects the methods to which this rule applies.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>

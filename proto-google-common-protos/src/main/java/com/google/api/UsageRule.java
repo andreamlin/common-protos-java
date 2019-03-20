@@ -120,8 +120,7 @@ private static final long serialVersionUID = 0L;
    * <pre>
    * Selects the methods to which this rule applies. Use '*' to indicate all
    * methods in all APIs.
-   * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-   * details.
+   * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
    * </pre>
    *
    * <code>string selector = 1;</code>
@@ -142,8 +141,7 @@ private static final long serialVersionUID = 0L;
    * <pre>
    * Selects the methods to which this rule applies. Use '*' to indicate all
    * methods in all APIs.
-   * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-   * details.
+   * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
    * </pre>
    *
    * <code>string selector = 1;</code>
@@ -557,8 +555,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * Selects the methods to which this rule applies. Use '*' to indicate all
      * methods in all APIs.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -579,8 +576,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * Selects the methods to which this rule applies. Use '*' to indicate all
      * methods in all APIs.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -602,8 +598,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * Selects the methods to which this rule applies. Use '*' to indicate all
      * methods in all APIs.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -622,8 +617,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * Selects the methods to which this rule applies. Use '*' to indicate all
      * methods in all APIs.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
@@ -638,8 +632,7 @@ private static final long serialVersionUID = 0L;
      * <pre>
      * Selects the methods to which this rule applies. Use '*' to indicate all
      * methods in all APIs.
-     * Refer to [selector][google.api.DocumentationRule.selector] for syntax
-     * details.
+     * Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
      * </pre>
      *
      * <code>string selector = 1;</code>
