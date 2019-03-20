@@ -25,6 +25,7 @@ option java_outer_classname = "QuotaProto";
 option java_package = "com.google.api";
 option objc_class_prefix = "GAPI";
 
+
 // Quota configuration helps to achieve fairness and budgeting in service
 // usage.
 //
@@ -88,8 +89,7 @@ message Quota {
 message MetricRule {
   // Selects the methods to which this rule applies.
   //
-  // Refer to [selector][google.api.DocumentationRule.selector] for syntax
-  // details.
+  // Refer to [selector][google.api.DocumentationRule.selector] for syntax details.
   string selector = 1;
 
   // Metrics to update when the selected methods are called, and the associated
