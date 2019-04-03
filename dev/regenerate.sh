@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Constants
-REQUIRED_PROTOC_VERSION="libprotoc 3.6.1"
+REQUIRED_PROTOC_VERSION="libprotoc 3.7.1"
 # TODO: move this to googleapis/api-common-protos.git when it becomes the SOT.
 COMMON_PROTOS_REPO="https://github.com/googleapis/googleapis.git"
 
