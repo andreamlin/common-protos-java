@@ -21,7 +21,7 @@ apply plugin: 'java'
 apply plugin: 'io.codearte.nexus-staging'
 apply plugin: 'com.google.protobuf'
 
-project.version = "1.14.0" // {x-version-update:common-protos-java:current}
+project.version = "1.15.1-SNAPSHOT" // {x-version-update:common-protos-java:current}
 
 if (project.hasProperty('ossrhUsername') && project.hasProperty('ossrhPassword')) {
   // Nexus staging plugin only works at root project level
@@ -123,10 +123,34 @@ subprojects {
           artifact sourcesJar
 
           pom {
+            name = 'Google Cloud Common Protos for Java'
             packaging = 'jar'
             artifactId = project.name
-            description = 'Google Common Protos for Java'
+            description = 'Google Cloud Common Protos for Java'
+            url = 'https://github.com/googleapis/common-protos-java'
 
+            scm {
+              url = 'https://github.com/googleapis/common-protos-java'
+              connection = 'scm:git:https://github.com/googleapis/common-protos-java.git'
+            }
+
+            licenses {
+              license {
+                name = 'Apache'
+                url = 'https://github.com/googleapis/common-protos-java/blob/master/LICENSE'
+              }
+            }
+
+            developers {
+              developer {
+                id = 'GoogleAPIs'
+                name = 'GoogleAPIs'
+                email = 'googleapis@googlegroups.com'
+                url = 'https://github.com/googleapis/common-protos-java'
+                organization = 'Google LLC'
+                organizationUrl = 'https://www.google.com'
+              }
+            }
           }
         }
       }
@@ -138,6 +162,12 @@ subprojects {
             password = project.hasProperty('ossrhPassword') ? project.getProperty('ossrhPassword') : null
           }
         }
+      }
+    }
+
+    signing {
+      if (!project.hasProperty('skip.signing')) {
+        sign publishing.publications.mavenJava
       }
     }
   }

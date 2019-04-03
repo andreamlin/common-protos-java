@@ -11,7 +11,7 @@ The protobuf definitions for these generated Java classes are provided in the
 Quickstart
 ----------
 
-[//]: # ({x-version-update-start:google-cloud-bom:released})
+[//]: # ({x-version-update-start:common-protos-java:released})
 If you are using Maven, add this to your pom.xml file
 ```xml
   <dependencyManagement>
@@ -19,13 +19,13 @@ If you are using Maven, add this to your pom.xml file
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-common-protos</artifactId>
-        <version>1.14.0</version>
+        <version>1.15.0</version>
        </dependency>
 
        <dependency>
          <groupId>com.google.api.grpc</groupId>
          <artifactId>grpc-google-common-protos</artifactId>
-         <version>1.14.0</version>
+         <version>1.15.0</version>
        </dependency>
         ...
     </dependencies>
@@ -33,16 +33,16 @@ If you are using Maven, add this to your pom.xml file
 ```
 [//]: # ({x-version-update-end})
 
-[//]: # ({x-version-update-start:google-cloud-storage:released})
+[//]: # ({x-version-update-start:common-protos-java:released})
 If you are using Gradle, add this to your dependencies
 ```Groovy
-compile 'com.google.api.grpc:proto-google-common-protos:1.14.0'
-compile 'com.google.api.grpc:grpc-google-common-protos:1.14.0'
+compile 'com.google.api.grpc:proto-google-common-protos:1.15.0'
+compile 'com.google.api.grpc:grpc-google-common-protos:1.15.0'
 ```
 If you are using SBT, add this to your dependencies
 ```Scala
-libraryDependencies += "com.google.api.grpc" % "proto-google-common-protos" % "1.14.0"
-libraryDependencies += "com.google.api.grpc" % "grpc-google-common-protos" % "1.14.0"
+libraryDependencies += "com.google.api.grpc" % "proto-google-common-protos" % "1.15.0"
+libraryDependencies += "com.google.api.grpc" % "grpc-google-common-protos" % "1.15.0"
 ```
 [//]: # ({x-version-update-end})
 
